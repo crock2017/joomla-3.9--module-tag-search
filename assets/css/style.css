@@ -1,0 +1,24 @@
+#tags_search{
+	margin-bottom: 1px;
+}
+#tags_search_results{
+	position: absolute;
+	top: auto;
+	background-color: #F8F8F8;
+	width: 100%;
+
+}
+#tags_search_results div {
+	margin-left: 10px;
+}
+#tags_search_results a {
+	text-decoration: none;
+	color: #686868;
+}
+#tags_search_results a:hover{
+	color: #b2b2b2;
+	background-color: transparent !important;
+}
+#tags_search_results :last-child {
+	padding-bottom: 20px;
+}

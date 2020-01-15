@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/**
+ * @copyright	Copyright © 2018 - All rights reserved Crock.
+ * @license		GNU General Public License v2.0
+ * April 2018
+ */
+-->
+<extension type="module" method="upgrade" client="site">
+	<name>MOD_TAGS_SEARCH</name>
+	<creationDate>Mar 2018</creationDate>
+	<author>Crock</author>
+	<authorEmail>crock@vodafone.de</authorEmail>
+	<authorUrl>http://crock.com</authorUrl>
+	<copyright>Copyright © 2018 - All rights reserved Crock.ltd</copyright>
+	<license>GNU General Public License v2.0</license>
+	<version>0.0.1</version>
+	<description>MOD__P_THIS_MODULE_FOR_JOOMLA_TA</description>
+	<files>
+		<filename module="mod_tags_search">mod_tags_search.php</filename>
+		<filename>mod_tags_search.xml</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="radio" name="query" label="Load jQuery" description="Check if need to load jQuery" class="btn-group btn-groupyesno" value="1" default="0">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field type="text" name="characters" label="Quantify characters to start the search" />
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+</fields>
+
+	</config> 
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_tags_search.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_tags_search.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_tags_search.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_tags_search.ini</language>
+	</languages>
+</extension>
